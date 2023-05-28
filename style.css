@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'lota', sans-serif;
+  font-family: 'Lota', sans-serif;
   margin: auto;
   position: fixed;
 }
@@ -18,6 +18,7 @@ body {
 header {
   width: 100vw;
   height: 5rem;
+  background: url('images/background1.png');
 }
 
 .header {
@@ -61,7 +62,7 @@ i {
 }
 
 .hamburger {
-  margin: 20px;
+  margin: 30px;
 }
 
 .bars {
@@ -78,6 +79,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .logo,
@@ -85,15 +87,53 @@ i {
   display: none;
 }
 
+/* ------------------hero section-------------------- */
 .home-section {
-  width: 100vw;
-  height: 100vh;
-  background: url('images/background1.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100vw;
+    height: 55vh;
+    background: url('images/background1.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .content {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .content h2 {
+    color: #f52f2f;
+  }
+  .content h1 {
+    font-weight: 900;
+    line-height: 38px;
+    background: url('images/background-text.jpg');
+    text-transform: uppercase;
+    background-repeat: repeat;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2.5em;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
+  .content-description {
+    background-color: rgba(242, 242, 242, 0.815);
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    border: 3px solid #fff;
+  }
 @media screen and (min-width: 768px) {
   header {
     width: 100vw;
@@ -171,5 +211,27 @@ i {
 
   .hamburger {
     display: none;
+  }
+
+  .home-section {
+    width: 100vw;
+    height: 100vh;
+    background: url('images/background1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    position: relative;
+    top: 15%;
+    left: 15%;
+  }
+
+  .content-description {
+    background-color: rgba(242, 242, 242, 0.815);
+    width: 50%;
+    padding: 20px;
+    border: 3px solid #fff;
   }
 }
