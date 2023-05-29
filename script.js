@@ -22,14 +22,14 @@ const program = [
         with experts for each topic.
          `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/program_icon_04.png',
         title:'Workshop',
         content:`  
             Try creating your own work using open 
             source licence rather than watching at it.
         `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/program_icon_05.png',
         title:'Network',
         content:`
         Get opportunities to 
@@ -41,7 +41,7 @@ const program = [
 
 const features = [
     {
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -51,7 +51,7 @@ const features = [
              `,
     },
     {
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -60,7 +60,7 @@ const features = [
              sharing their stories and advices.
              `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -69,7 +69,7 @@ const features = [
              sharing their stories and advices.
              `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -78,7 +78,7 @@ const features = [
              sharing their stories and advices.
              `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -87,7 +87,7 @@ const features = [
              sharing their stories and advices.
              `,
     },{
-        icon:'images/icon1.png',
+        icon:'images/now.jpg',
         name:'Caleb',
         rank: 'Student',
         star: '⭐️⭐️⭐️⭐️⭐️',
@@ -98,6 +98,21 @@ const features = [
     },
 ];
 
+const hamburger = document.querySelector('.hamburger');
+const Menu = document.querySelector('.nav-item');
+const backMenu = document.querySelectorAll('.nav-list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  Menu.classList.toggle('active');
+  console.log('Thank')
+});
+
+backMenu.forEach((element) => element.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  Menu.classList.remove('active');
+  console.log('Bye!')
+}));
 
 document.addEventListener('DOMContentLoaded', () => {
 const programs = document.querySelector('.event');
@@ -117,27 +132,26 @@ program.forEach((card) => {
                 </div>
     `;
     cardTemplate += tag;
-})
+});
 programs.innerHTML = cardTemplate;
 
 features.forEach((card) => {
     const tag = `
          <div class="featured-card">
                         <div class="img-bg">
-                            <img  class="featured-img" src="images/student1.jpg" alt="">
+                            <img  class="featured-img" src="${card.icon}" alt="">
                         </div>
                         <div class="card">
-                            <h2>Johnson kofi</h2>
-                            <span>Harvard Law School Professor</span>
+                            <h2>${card.name}</h2>
+                            <span>${card.rank}</span>
+                            <i>${card.star}</i>
                             <p>
-                                Benkler studies commons-based peer production, 
-                                and published his seminal book,
-                                 The Wealth of Networks in 2006.
+                            ${card.content}
                             </p>
                         </div>
                     </div>
     `;
     featureTemplate += tag;
-})
+});
 feature.innerHTML = featureTemplate;
-})
+});
