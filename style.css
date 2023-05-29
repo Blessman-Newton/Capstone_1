@@ -82,6 +82,12 @@ i {
   align-items: center;
 }
 
+.nav-list a:hover {
+  animation: animate 2s;
+  transition: ease-out;
+  color: #f5642f;
+}
+
 .logo,
 .nav-item {
   display: none;
@@ -175,12 +181,44 @@ i {
   color: #fff;
 }
 
-.program-content h3 hr {
+hr {
   position: relative;
   border: 1px solid rgb(239, 81, 60);
   left: 30%;
   top: 7px;
   width: 53px;
+}
+
+.programs p {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  line-height: 15px;
+  color: #fff;
+  width: 80%;
+}
+
+.programs h2 {
+  color: #ec5242;
+  font-size: 12px;
+  text-align: center;
+  width: 100px;
+  display: flex;
+}
+
+.programs img {
+  width: 50px;
+}
+
+.event {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .programs {
@@ -192,35 +230,6 @@ i {
   gap: 5px;
   width: 95%;
   height: 100px;
-}
-
-.programs p {
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-self: center;
-  line-height: 15px;
-  color: #fff;
-  width: 70%;
-}
-
-.programs h2 {
-  color: #f00;
-  font-size: 15px;
-}
-
-.programs img {
-  width: 50px;
-}
-
-.event {
-  width: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .speaker-section {
@@ -238,7 +247,6 @@ i {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #fff;
 }
 
 .featured-card {
@@ -247,6 +255,13 @@ i {
   height: auto;
   justify-content: center;
   gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 200px;
 }
 
 .featured-img {
@@ -258,6 +273,8 @@ i {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
+  width: 22em;
 }
 
 .partners {
@@ -290,7 +307,7 @@ i {
   position: relative;
   top: 70px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding: 20px 20px;
@@ -299,6 +316,7 @@ i {
 
 .footer i {
   color: #3b3b46;
+  font-size: 14px;
 }
 
 .footer b {
@@ -309,6 +327,29 @@ i {
   font-weight: 700;
   text-align: center;
   line-height: 40px;
+}
+
+.programs:hover {
+  animation: animate 2s;
+  transition: ease-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -443,7 +484,8 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    padding: 30px;
   }
 
   .programs p {
@@ -467,7 +509,10 @@ i {
   }
 
   .programs h2 {
-    color: #f00;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 
   .speaker-section {
@@ -493,6 +538,27 @@ i {
     height: 220px;
     justify-content: center;
     gap: 10em;
+  }
+
+  .card {
+    background-color: #e80000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .featured-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
   }
 
   .img-bg {
