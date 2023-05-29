@@ -110,7 +110,10 @@ i {
 }
 
 .content h2 {
-  color: #f52f2f;
+  color: #f5642f;
+  font-size: 2em;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .content h1 {
@@ -123,8 +126,8 @@ i {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 2.5em;
-  font-family: 'Lexend Deca', sans-serif;
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .content-description {
@@ -133,11 +136,19 @@ i {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
   padding: 20px;
   border: 3px solid #fff;
 }
-
+.content h3 {
+  font: bold 16px Verdana;
+    color: rgb(87, 87, 87);
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+.content span {
+    font-family: "Nanum Gothic";
+    color: rgb(51, 51, 51);
+}
 .main-program {
   width: auto;
   height: auto;
@@ -152,31 +163,48 @@ i {
   flex-direction: column;
   padding: 50px;
   align-items: center;
-  gap: 20px;
+  gap: 70px;
+}
+.program-content span a{
+  color: #fff;
+}
+.program-content h3 {
+  color: #fff;
+}
+.program-content h3 hr {
+  position: relative;
+  border: 1px solid rgb(239, 81, 60);
+  left: 30%;
+  top: 7px;
+  width: 53px;
 }
 
 .programs {
   background-color: rgba(143, 140, 140, 0.2);
-  width: 23em;
-  height: 150px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  padding: 2px;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+gap: 5px;
+width: 95%;
+height: 100px;
 }
 
 .programs p {
   width: 250px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-self: center;
-  line-height: 24px;
+  line-height: 15px;
+
   color: #fff;
+  width: 70%;
 }
 
 .programs h2 {
   color: #f00;
+  font-size: 15px;
 }
 
 .programs img {
@@ -184,12 +212,12 @@ i {
 }
 
 .event {
-  display: flex;
   width: auto;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
   flex-direction: column;
+  gap: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -285,25 +313,37 @@ i {
     top: 15%;
     padding: 70px;
   }
+  .content h1 {
+    font-size: 5rem;
+    line-height: 70px;
+    font-family: 900;
+  }
 
   .content-description {
     background-color: rgba(242, 242, 242, 0.815);
-    width: 50%;
+    width: 60%;
     padding: 20px;
     border: 3px solid #fff;
   }
-
+  .content h3 {
+    font: bold 36px Verdana;
+      color: rgb(87, 87, 87);
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+  }
   .program-content {
     display: flex;
     flex-direction: column;
     padding: 50px;
     align-items: center;
-    gap: 20px;
+    gap: 90px;
   }
-
+  .program-content h3 {
+    color: #fff;
+  }
   .programs {
     background-color: rgba(143, 140, 140, 0.2);
-    width: 12em;
+    width: 13em;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -316,6 +356,7 @@ i {
     display: flex;
     justify-content: center;
     align-self: center;
+    text-align: center;
   }
 
   .programs img {
@@ -325,8 +366,8 @@ i {
   .event {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: center;
+    gap: -20px;
     flex-wrap: wrap;
   }
 
