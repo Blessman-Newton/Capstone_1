@@ -11,14 +11,16 @@
 
 body {
   font-family: 'Lota', sans-serif;
-  margin: auto;
-  position: fixed;
+  width: 100%;
+  background-color: blue;
 }
 
 header {
   width: 100vw;
   height: 5rem;
   background: url('images/background1.png');
+  position: fixed;
+  z-index: 1;
 }
 
 .header {
@@ -79,7 +81,6 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .logo,
@@ -89,51 +90,108 @@ i {
 
 /* ------------------hero section-------------------- */
 .home-section {
-    width: 100vw;
-    height: 55vh;
-    background: url('images/background1.png');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-  }
-
-  .content {
-    position: relative;
-    top: 20px;
-    left: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .content h2 {
-    color: #f52f2f;
-  }
-  .content h1 {
-    font-weight: 900;
-    line-height: 38px;
-    background: url('images/background-text.jpg');
-    text-transform: uppercase;
-    background-repeat: repeat;
-    background-size: contain;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 2.5em;
-    font-family: 'Lexend Deca', sans-serif;
+  width: 100vw;
+  height: auto;
+  background: url('images/background1.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 70px;
+  position: relative;
 }
 
-  .content-description {
-    background-color: rgba(242, 242, 242, 0.815);
-    margin-top: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90%;
-    padding: 20px;
-    border: 3px solid #fff;
-  }
+.content {
+  position: relative;
+  top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content h2 {
+  color: #f52f2f;
+}
+
+.content h1 {
+  font-weight: 900;
+  line-height: 38px;
+  background: url('images/background-text.jpg');
+  text-transform: uppercase;
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.5em;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.content-description {
+  background-color: rgba(242, 242, 242, 0.815);
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  border: 3px solid #fff;
+}
+
+.main-program {
+  width: auto;
+  height: auto;
+  background-color: #3b3b46;
+  top: 4rem;
+  position: relative;
+  top: 70px;
+}
+
+.program-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+.programs {
+  background-color: rgba(143, 140, 140, 0.2);
+  width: 23em;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 2px;
+}
+
+.programs p {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  line-height: 24px;
+  color: #fff;
+}
+
+.programs h2 {
+  color: #f00;
+}
+
+.programs img {
+  width: 50px;
+}
+
+.event {
+  display: flex;
+  width: auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   header {
     width: 100vw;
@@ -214,7 +272,7 @@ i {
   }
 
   .home-section {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background: url('images/background1.png');
     background-position: center;
@@ -225,7 +283,7 @@ i {
   .content {
     position: relative;
     top: 15%;
-    left: 15%;
+    padding: 70px;
   }
 
   .content-description {
@@ -233,5 +291,46 @@ i {
     width: 50%;
     padding: 20px;
     border: 3px solid #fff;
+  }
+
+  .program-content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .programs {
+    background-color: rgba(143, 140, 140, 0.2);
+    width: 12em;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .programs p {
+    width: 11em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .programs img {
+    width: 50px;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .programs h2 {
+    color: #f00;
   }
 }
