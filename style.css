@@ -107,11 +107,11 @@ i {
 
 .content {
   position: relative;
-  top: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  
 }
 
 .content h2 {
@@ -153,8 +153,9 @@ i {
 }
 
 .content span {
-  font-family: "Nanum Gothic";
+  font-family: "Nanum Gothic", serif;
   color: rgb(51, 51, 51);
+  font-size: 14px; 
 }
 
 .main-program {
@@ -370,7 +371,7 @@ hr {
   .header-link {
     height: 100%;
     gap: 20px;
-    margin-right: 14%;
+    margin-right: 15%;
   }
 
   li {
@@ -414,6 +415,7 @@ hr {
   .nav-list:nth-child(6) {
     width: 150px;
     height: 50px;
+    margin-left: 20px;
     border: 5px solid red;
   }
 
@@ -441,8 +443,9 @@ hr {
 
   .content {
     position: relative;
-    top: 15%;
-    padding: 70px;
+
+    padding: 120px 140px;
+    gap: 15px;
   }
 
   .content h1 {
@@ -506,6 +509,8 @@ hr {
     justify-content: center;
     gap: -20px;
     flex-wrap: wrap;
+
+    width: auto;
   }
 
   .programs h2 {
@@ -541,25 +546,11 @@ hr {
   }
 
   .card {
-    background-color: #e80000;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 
-  .featured-card {
-    display: flex;
-    width: auto;
-    height: auto;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-  }
 
   .img-bg {
     background: url('images/speaker-back.png');
@@ -569,12 +560,18 @@ hr {
     position: relative;
   }
 
+
   .recent {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 20px;
-  }
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    position: relative;
 
+    width: 100%;
+  }
   .featured-img {
     padding: 6px;
     width: 200px;
