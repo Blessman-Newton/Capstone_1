@@ -1,3 +1,4 @@
+// --------------- Arrays Start ----------------
 const program = [
   {
     icon: 'images/icon1.png',
@@ -109,20 +110,9 @@ const features = [
              `,
   },
 ];
+// --------------- Arrays END ----------------
 
-const hamburger = document.querySelector('.hamburger');
-const Menu = document.querySelector('.nav-item');
-const backMenu = document.querySelectorAll('.nav-list');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  Menu.classList.toggle('active');
-});
-
-backMenu.forEach((element) => element.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  Menu.classList.remove('active');
-}));
+// --------------- Main program section ----------------
 
 document.addEventListener('DOMContentLoaded', () => {
   const programs = document.querySelector('.event');
@@ -145,6 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   programs.innerHTML = cardTemplate;
 
+  // --------------- Main program section ----------------
+
+  // --------------- Featured speakers section ----------------
   features.forEach((card) => {
     const tag = `
          <div class="featured-card">
@@ -165,3 +158,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   feature.innerHTML = featureTemplate;
 });
+// --------------- Featured speakers section ----------------
+
+// --------------- Hamburger ----------------
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.nav-item');
+const backMenu = document.querySelectorAll('.nav-list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+backMenu.forEach((element) => element.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  menu.classList.remove('active');
+}));
+// --------------- Hamburger ----------------
