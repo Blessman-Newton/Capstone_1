@@ -23,10 +23,20 @@
 
 - [📝 License](#license)
 
+# 📖 About UNLOCK THE POWER OF DATA SCIENCE WITH AI <a name="about-project"></a>
 
+Driven into Data Science Using AI 2023 is a two-day conference designed to provide attendees with a comprehensive understanding of the latest trends, advancements, and practical applications of data science and AI. Explore cutting-edge technologies, industry best practices, and real-world case studies presented by renowned experts in the field.
+
+Welcome to 'Driven into Data Science Using AI 2023,' a premier event dedicated to exploring the intersection of data science and artificial intelligence. Join us for an immersive experience that will empower you with the knowledge and skills needed to thrive in the data-driven world.. 
+
+
+## 📷 Screenshot <a name="screenshot"></a>
+Check the screenshot of the project home page here
+
+![UNLOCK THE POWER OF DATA SCIENCE WITH AI](./images/readme.PNG)
 # 📖  Web Development Course event website. <a name="about-project"></a>
 
-**Web Development Course event website** is  Web Development curse event project build with HTML, CSS, Javascript.
+**UNLOCK THE POWER OF DATA SCIENCE WITH AI** Join us for the Data Science Summit 2023, a premier gathering of data science professionals, AI enthusiasts, and industry leaders..
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,7 +61,7 @@
 -  Mobile Version
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com/)
+- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/about.html)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
