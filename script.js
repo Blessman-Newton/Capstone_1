@@ -53,9 +53,10 @@ const features = [
          tech companies and has been instrumental
          in developing advanced AI solutions.
              `,
+    status: '',
   },
   {
-    icon: 'images/now.jpg',
+    icon: 'images/student1.jpg',
     name: 'John Davis',
     rank: 'AI researcher',
     star: 'ALX',
@@ -64,8 +65,9 @@ const features = [
         to pushing the
          boundaries of AI and machine learning.
              `,
+    status: '',
   }, {
-    icon: 'images/now.jpg',
+    icon: 'images/edition1.jpg',
     name: 'Maria Garcia',
     rank: 'Data Science Consultant',
     star: 'NomPass',
@@ -76,8 +78,9 @@ const features = [
          leverage their
          data for strategic decision-making.
              `,
+    status: 'hidden',
   }, {
-    icon: 'images/now.jpg',
+    icon: 'images/edition2.jpg',
     name: 'David Johnson',
     rank: 'Entrepreneur',
     star: 'ExpressWord',
@@ -85,8 +88,9 @@ const features = [
         David Johnson is a seasoned entrepreneur and AI strategist.
         With a successful track record of launching AI-driven startups.
              `,
+    status: 'hidden',
   }, {
-    icon: 'images/now.jpg',
+    icon: 'images/images (1).jpg',
     name: 'Blessman Newton',
     rank: 'Full Stack Developer',
     star: 'Microverse',
@@ -96,8 +100,9 @@ const features = [
           presentations focus on practical
          applications of data science in real-world scenarios.
              `,
+    status: 'hidden',
   }, {
-    icon: 'images/now.jpg',
+    icon: 'images/images.png',
     name: 'Caleb Anaane',
     rank: 'Student',
     star: 'DataCamp',
@@ -108,6 +113,7 @@ const features = [
          audiences on the potential of AI
           for innovation and disruption..
              `,
+    status: 'hidden',
   },
 ];
 // --------------- Arrays END ----------------
@@ -140,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------- Featured speakers section ----------------
   features.forEach((card) => {
     const tag = `
-         <div class="featured-card">
+         <div class="featured-card featured-mob">
                         <div class="img-bg">
                             <img  class="featured-img" src="${card.icon}" alt="">
                         </div>
@@ -175,3 +181,36 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
   menu.classList.remove('active');
 }));
 // --------------- Hamburger ----------------
+
+const loadMore = document.querySelector('.see-more');
+let currentItem = 3;
+const itemsPerPage = 3; // Number of items to display per "Show More" click
+
+loadMore.addEventListener('click', () => {
+  const boxes = [...document.querySelectorAll('.featured-speaker .recent .featured-mob')];
+
+  if (loadMore.textContent === 'Show more') {
+    // Show more items
+    for (let i = currentItem; i < currentItem + itemsPerPage; i += 1) {
+      if (boxes[i]) {
+        boxes[i].style.display = 'flex';
+      }
+    }
+    currentItem += itemsPerPage;
+  } else {
+    // Show less items
+    for (let i = currentItem - itemsPerPage; i < currentItem; i += 1) {
+      if (boxes[i]) {
+        boxes[i].style.display = 'none';
+      }
+    }
+    currentItem -= itemsPerPage;
+  }
+
+  // Check if there are more items to show or hide
+  if (currentItem >= boxes.length) {
+    loadMore.textContent = 'Show less'; // Change button text to "Show Less"
+  } else {
+    loadMore.textContent = 'Show more'; // Change button text back to "Show More"
+  }
+});
