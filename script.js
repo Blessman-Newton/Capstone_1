@@ -1,25 +1,26 @@
 const program = [
     {
         icon:'images/icon1.png',
-        title:'Lecture',
+        title:'Networking',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        Connect with industry experts, 
+        fellow data scientists, 
+        and AI enthusiasts..
              `,
     },{
         icon:'images/icon2.png',
-        title:'Exhibition',
+        title:'Insights',
         content:`
-        Appreciate various creations applying
-         ther knowlege in real world.
+        Gain valuable insights 
+        from keynote speakers 
+        and panel discussions..
          `,
     },{
         icon:'images/icon3.png',
-        title:'Forum',
+        title:'Workshops',
         content:`
-        Have the time to share your 
-        thoughts and opinions 
-        with experts for each topic.
+        Participate in hands-on workshops to 
+        sharpen your data science and AI skills.
          `,
     },{
         icon:'images/program_icon_04.png',
@@ -42,58 +43,69 @@ const program = [
 const features = [
     {
         icon:'images/now.jpg',
-        name:'Caleb',
-        rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        name:'Jane Smith',
+        rank: 'Data Scientist',
+        star: 'DataCamp',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        With 10 years of experience in the 
+        field, Jane has worked with leading
+         tech companies and has been instrumental
+         in developing advanced AI solutions.
              `,
     },
     {
         icon:'images/now.jpg',
-        name:'Caleb',
-        rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        name:'John Davis',
+        rank: 'AI researcher',
+        star: 'ALX',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        John has dedicated his career 
+        to pushing the
+         boundaries of AI and machine learning.
              `,
     },{
         icon:'images/now.jpg',
-        name:'Caleb',
-        rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        name:'Maria Garcia',
+        rank: 'Data Science Consultant',
+        star: 'NomPass',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        With a background in statistics and 
+        data analysis, Maria has helped 
+        organizations across diverse sectors
+         leverage their
+         data for strategic decision-making.
              `,
     },{
         icon:'images/now.jpg',
-        name:'Caleb',
-        rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        name:'David Johnson',
+        rank: 'Entrepreneur',
+        star: 'ExpressWord',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        David Johnson is a seasoned entrepreneur and AI strategist.
+        With a successful track record of launching AI-driven startups.
              `,
     },{
         icon:'images/now.jpg',
-        name:'Caleb',
-        rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        name:'Blessman Newton',
+        rank: 'Full Stack Developer',
+        star: 'Microverse',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        Blessman is passionate about bridging the gap between
+         technical expertise and business outcomes, and her
+          presentations focus on practical
+         applications of data science in real-world scenarios.
              `,
     },{
         icon:'images/now.jpg',
-        name:'Caleb',
+        name:'Caleb Anaane',
         rank: 'Student',
-        star: '⭐️⭐️⭐️⭐️⭐️',
+        star: 'DataCamp',
         content:`   
-            Listen to the past students with a job,
-             sharing their stories and advices.
+        David is a dynamic speaker who combines 
+        his business acumen with technical knowledge
+         to inspire and educate
+         audiences on the potential of AI
+          for innovation and disruption..
              `,
     },
 ];
@@ -143,8 +155,8 @@ features.forEach((card) => {
                         </div>
                         <div class="card">
                             <h2>${card.name}</h2>
-                            <span>${card.rank}</span>
-                            <i>${card.star}</i>
+                            <i>${card.rank}</i>
+                            <span>${card.star}</span>
                             <p>
                             ${card.content}
                             </p>
