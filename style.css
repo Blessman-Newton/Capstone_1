@@ -64,6 +64,10 @@ i {
 
 .hamburger {
   margin: 30px;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .bars {
@@ -72,7 +76,7 @@ i {
   height: 4px;
   margin: 5px 0;
   transition: all 0.3s ease;
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(228, 10, 10);
 }
 
 .navigation-bar {
@@ -92,9 +96,13 @@ i {
   color: #f5642f;
 }
 
-.logo,
-.nav-item {
+.logo {
   display: none;
+}
+
+.nav-item {
+  display: flex;
+  padding: 30px;
 }
 
 /* ------------------hero section-------------------- */
@@ -289,7 +297,6 @@ i {
   font-family: 'Lato', sans-serif;
 }
 
-
 .content h3 {
   font-size: 16px;
   font-weight: bold;
@@ -392,7 +399,8 @@ hr {
   align-items: center;
   width: 100%;
 }
-.featured-speaker  h2{
+
+.featured-speaker h2 {
   color: #000;
   font-size: 20px;
   font-weight: 400;
@@ -407,21 +415,26 @@ hr {
   justify-content: center;
   gap: 10px;
 }
+
 .speaker-para {
   text-align: center;
 }
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 5px;
   min-height: 200px;
 }
+
 .card span {
   color: #000;
 }
+
 .card i {
-  color: #ff0000;
+  color: #f00;
 }
+
 .featured-img {
   width: 180px;
   height: 200px;
@@ -852,5 +865,45 @@ hr {
     align-items: center;
     width: 450px;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bars:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger.active .bars:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 41.7rem;
+    transition: 1s;
+    background: #ddd3d3;
+  }
+
+  .nav-item.active {
+    top: 0;
+  }
+
+  .nav-item li {
+    margin: 10px 0;
+    border-right-width: 30px;
+    padding: 8px;
   }
 }
