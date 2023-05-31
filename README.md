@@ -34,7 +34,7 @@ Welcome to 'Driven into Data Science Using AI 2023,' a premier event dedicated t
 Check the screenshot of the project home page here
 
 ![UNLOCK THE POWER OF DATA SCIENCE WITH AI](./images/readme.PNG)
-# 📖  Web Development Course event website. <a name="about-project"></a>
+# 📖  DATA SCIENCE WITH AI EVENT WEBSITE. <a name="about-project"></a>
 
 **UNLOCK THE POWER OF DATA SCIENCE WITH AI** Join us for the Data Science Summit 2023, a premier gathering of data science professionals, AI enthusiasts, and industry leaders..
 
