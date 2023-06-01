@@ -58,7 +58,14 @@ Check the screenshot of the project home page here
 
 ### Key Features <a name="key-features"></a>
 
--  Mobile Version
+- [ ] Mobile Version
+- [ ] Desktop Version
+- [ ] Home Page
+- [ ] About Page
+- [ ] add hover effects
+- [ ] Pagination
+- [ ] Mobile menu
+- [ ] DOM maniplation and dynamic features
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://blessman-newton.github.io/Capstone_1/about.html)
@@ -107,22 +114,18 @@ Open index.html using live server extension.
 
 ### Deployment
 
-- [Live Demo Link](https:/google.com/)
+- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/about.html)
 
 ## 👥 Authors <a name="getting-started"></a>
 
 - 👤 Denio Nhanale
 
-    - GitHub: [@githubhandle](https://github.com/Blessman-Newton)
+    - GitHub: [@Githubhandle](https://github.com/Blessman-Newton)
     - LinkedIn: [LinkedIn](https://www.linkedin.com/in/blessman-newton/)
+    - LinkedIn: [Twitter](https://www.linkedin.com/in/blessman_newton/)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] Desktop Version
-- [ ] Home Page
-- [ ] About Page
-- [ ] add animations
 
 
 ##  Video Presentation <a name="live-demo"></a>
