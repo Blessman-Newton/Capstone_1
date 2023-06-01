@@ -27,7 +27,7 @@
 
 Driven into Data Science Using AI 2023 is a two-day conference designed to provide attendees with a comprehensive understanding of the latest trends, advancements, and practical applications of data science and AI. Explore cutting-edge technologies, industry best practices, and real-world case studies presented by renowned experts in the field.
 
-Welcome to 'Driven into Data Science Using AI 2023,' a premier event dedicated to exploring the intersection of data science and artificial intelligence. Join us for an immersive experience that will empower you with the knowledge and skills needed to thrive in the data-driven world.. 
+Welcome to 'Driven into Data Science Using AI 2023,' a premier event dedicated to exploring the intersection of data science and artificial intelligence. Join us for an immersive experience that will empower you with the knowledge and skills needed to thrive in the data-driven world. 
 
 
 ## 📷 Screenshot <a name="screenshot"></a>
