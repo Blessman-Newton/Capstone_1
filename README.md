@@ -68,7 +68,7 @@ Check the screenshot of the project home page here
 - [ ] DOM maniplation and dynamic features
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/about.html)
+- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/index.html)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -114,7 +114,7 @@ Open index.html using live server extension.
 
 ### Deployment
 
-- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/about.html)
+- [Live Demo Link](https://blessman-newton.github.io/Capstone_1/index.html)
 
 ## 👥 Authors <a name="getting-started"></a>
 
