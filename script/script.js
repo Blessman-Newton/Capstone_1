@@ -214,3 +214,30 @@ loadMore.addEventListener('click', () => {
     loadMore.textContent = 'Show more'; // Change button text back to "Show More"
   }
 });
+
+// --------------- scroll up button
+
+const calctScrollValue = () => {
+  const scrollProgress = document.getElementById('progress');
+  // const progressValue = document.getElementById('#progresss_value');
+  const position = document.documentElement.scrollTop;
+  const calctValue = document.documentElement.scrollHeight
+                - document.documentElement.clientHeight;
+  const scrollValue = Math.round((position * 100) / calctValue);
+
+  if (position > 100) {
+    scrollProgress.style.display = 'grid';
+  } else {
+    scrollProgress.style.display = 'none';
+  }
+
+  scrollProgress.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%, #fff ${scrollValue}%)`;
+};
+
+window.onscroll = calctScrollValue;
+window.onload = calctScrollValue;
+
+// --------------- scroll up button
