@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lota', sans-serif;
   width: 100%;
@@ -135,6 +139,21 @@ i {
 .nav-item {
   display: flex;
   padding: 30px;
+}
+
+#progress {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  color: rgb(255, 255, 255);
+  display: none;
+  place-items: center;
+  background-color: rgb(35, 210, 53);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 60px;
+  z-index: 1;
 }
 
 /* ------------------hero section-------------------- */
@@ -501,6 +520,22 @@ hr {
   color: #000;
 }
 
+#progress-value {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(6, 6, 6);
+  border-radius: 60px;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#progress-value span {
+  color: #fff;
+}
+
 .featured-img {
   width: 180px;
   height: 200px;
@@ -616,6 +651,7 @@ hr {
 .programs:hover {
   animation: animate 2s;
   transition: ease-out;
+  border: 1px solid #fff;
 }
 
 @keyframes animate {
@@ -673,6 +709,8 @@ hr {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
+    cursor: pointer;
+    position: relative;
   }
 
   .nav-list a {
@@ -1041,7 +1079,7 @@ hr {
 
   .nav-item {
     position: fixed;
-    top: -100%;
+    top: -400%;
     left: 0;
     flex-direction: column;
     justify-content: flex-start;
@@ -1049,7 +1087,7 @@ hr {
     gap: 20px;
     width: 100%;
     height: 41.7rem;
-    transition: 1s;
+    transition: 1s ease-in-out;
     background: #454444;
   }
 
