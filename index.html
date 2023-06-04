@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,100,1" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link rel="shortcut icon" href="images/logo.PNG" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>DataLive</title>
 </head>
@@ -18,11 +18,11 @@
     <header>
         <div class="header">
             <ul class="header-link">
-                <li class="header-list"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="header-list"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="header-list"><a href="">English</a></li>
-                <li class="header-list"><a href="">MyPage</a></li>
-                <li class="header-list"><a href="">Logout</a></li>
+                <li class="header-list"><a href="www.facebook.com/blessman_newton"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="header-list"><a href="www.tiwtter.com/blessman_newton"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="header-list"><a href="#">English</a></li>
+                <li class="header-list"><a href="#">MyPage</a></li>
+                <li class="header-list"><a href="#">Logout</a></li>
             </ul>
         </div>
         <nav class="navigation-bar">
@@ -36,13 +36,16 @@
             </div>
             <ul class="nav-item">
                 <li class="nav-list" id="list"><a href="about.html">About</a></li>
-                <li class="nav-list" id="list"><a href="">Program</a></li>
-                <li class="nav-list" id="list"><a href="">Join</a></li>
-                <li class="nav-list" id="list"><a href="">Sponsor</a></li>
+                <li class="nav-list" id="list"><a href="#benefits">Program</a></li>
+                <li class="nav-list" id="list"><a href="#speaker">Speaker</a></li>
+                <li class="nav-list" id="list"><a href="#partners">Sponsors</a></li>
                 <li class="nav-list" id="list"><a href="">News</a></li>
                 <li class="nav-list" id="list"><a href="">Register Now</a></li>
             </ul>
         </nav>
+        <div id="progress">
+            <strong id="progress-value"><span class="material-symbols-outlined">keyboard_double_arrow_up</span></strong>
+        </div>
     </header>
     <!-- END--------the headr tag contains navigation hamburger, other useful links -->
     
@@ -73,7 +76,7 @@
      program section goes here,
      created dynamic from js file
     -->
-        <section class="main-program">
+        <section class="main-program" id="benefits">
             <div class="program-content">
                 <h3>Key Benefits<hr></h3>
                 <div class="event">
@@ -91,7 +94,7 @@
      program section goes here,
      created dynamic from js file
     -->
-        <section class="speaker-section">
+        <section class="speaker-section" id="speaker">
             <div class="featured-speaker">
                 <h2 class="f-h2">Featured Speakers <hr></h2>
                 <div class="recent">
@@ -105,7 +108,7 @@
      program section goes here,
      created dynamic from js file
     -->
-        <section class="partners">
+        <section class="partners" id="partners">
             <h2>Partners <hr></h2>
             <div class="container">
                 <img src="images/Capture.PNG" alt="">
@@ -123,6 +126,6 @@
     <!-- END--------the main tag displays the main content of the page  -->
 
     <!-- the script tag link the js script file with html file  -->
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
